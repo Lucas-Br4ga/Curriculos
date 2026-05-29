@@ -127,3 +127,28 @@ Benefícios:
 | Skills para estudar   | Cypress, Figma, CI/CD        |
 | Projetos no currículo | DevBoard, APIShield, MLPrice |
 | Experiência 1ª        | Zup Innovation (mais relevante) |
+
+
+Tudo tem que rodos no wsl
+
+
+cd /mnt/c/Users/Lucas/OneDrive/Desktop/Projects/My/CurriculoFit
+docker compose up -d postgres redis
+
+
+cd /mnt/c/Users/Lucas/OneDrive/Desktop/Projects/My/CurriculoFit
+docker compose down
+
+
+
+
+# Sobe banco + redis
+docker compose up -d postgres redis
+
+# Backend
+
+cd backend && npm install && npx prisma migrate dev && npm run dev
+
+# Frontend (em outro terminal)
+
+cp .env.example .env && npm install && npm run dev
